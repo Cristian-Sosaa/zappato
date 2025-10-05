@@ -16,7 +16,7 @@
                    class="inline-block px-5 py-3 mt-6 text-sm font-medium text-white bg-black rounded-lg hover:ring-1 hover:ring-black"
                    wire:navigate
                 >
-                    Shop the Sale
+                    Adquirir oferta
                 </a>
             </div>
 
