@@ -43,7 +43,7 @@ class ShippingSeeder extends Seeder
         ]);
 
         $ukShippingZone->countries()->sync(
-            Country::where('iso3', '=', 'GBR')->first()->id,
+            Country::where('iso3', '=', 'SVL')->first()->id,
         );
 
         Price::create([
@@ -145,6 +145,7 @@ class ShippingSeeder extends Seeder
                 'SVK',
                 'ESP',
                 'SWE',
+                'SLV'
             ])->pluck('id'),
         );
 

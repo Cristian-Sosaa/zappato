@@ -3,11 +3,11 @@
         <x-brand.logo class="w-auto h-8 text-indigo-600" />
 
         <p class="max-w-sm mt-4 text-gray-700">
-            Tu tienda de sneakers en El Salvador. Productos 100% originales, lanzamientos exclusivos y estilo en cada paso.
+            Tu tienda de streetwear en El Salvador. Productos 100% originales, lanzamientos exclusivos y estilo en cada paso.
         </p>
 
         <p class="pt-4 mt-4 text-sm text-gray-500 border-t border-gray-100">
-            &copy; {{ now()->year }} Zappatos
+            &copy; {{ now()->year }} S'Wear 
         </p>
     </div>
 </footer>

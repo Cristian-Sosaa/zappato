@@ -5,7 +5,7 @@
                 Bienvenido a
 
                 <span class="text-indigo-600">
-                    Zappato
+                    S'Wear
                 </span>
 
                 
@@ -17,7 +17,7 @@
             </h1>
 
             <p class="mt-4 font-medium sm:leading-relaxed sm:text-xl">
-                Sneakers exclusivos en El Salvador. Encuentra las últimas tendencias, ediciones limitadas y estilo único en cada paso.
+                Streetwear exclusivos en El Salvador. Encuentra las últimas tendencias, ediciones limitadas y estilo único en cada paso.
             </p>
 
             <div class="flex flex-wrap justify-center gap-4 mt-8">

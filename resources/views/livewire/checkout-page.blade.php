@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-start">
             <div class="px-6 py-8 space-y-4 bg-white border border-gray-100 lg:sticky lg:top-8 rounded-xl lg:order-last">
                 <h3 class="font-medium">
-                    Order Summary
+                    Resumen del pedido
                 </h3>
 
                 <div class="flow-root">
@@ -20,7 +20,7 @@
                                     </p>
 
                                     <span class="block mt-1 text-xs text-gray-500">
-                                        {{ $line->quantity }} @ {{ $line->subTotal->formatted() }}
+                                        {{ $line->quantity }} Total {{ $line->subTotal->formatted() }}
                                     </span>
                                 </div>
                             </div>

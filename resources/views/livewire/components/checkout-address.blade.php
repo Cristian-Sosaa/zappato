@@ -7,7 +7,7 @@
                 <input type="checkbox"
                        value="1"
                        wire:model.live="shippingIsBilling" />
-                Same as billing
+                       Usar dirección de facturación
             </label>
         @endif
     </div>
@@ -166,7 +166,7 @@
                         wire:key="edit_btn"
                         wire:click.prevent="$set('editing', true)"
                         class="px-5 py-3 font-medium bg-white border rounded-lg shadow-sm hover:bg-gray-50">
-                    Edit Details
+                    Editar Detalles
                 </button>
             @endif
         </div>

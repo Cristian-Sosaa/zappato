@@ -47,7 +47,7 @@ class OrderSeeder extends Seeder
                     $pricing = Pricing::for($variant, $quantity)->get();
                     $price = $pricing->matched->price->value;
                     $subTotal = $price * $quantity;
-                    $tax = (int) ($subTotal * .2);
+                    $tax = (int) ($subTotal * .13);
                     $options = $variant->values->map(fn ($value) => $value->translate('name'));
 
                     $lines->push([
@@ -69,7 +69,7 @@ class OrderSeeder extends Seeder
                                 price: new Price($tax, $currency, 1),
                                 identifier: 'VAT',
                                 description: 'VAT',
-                                percentage: 20,
+                                percentage: 13,
                             ),
                         ])),
                     ]);
@@ -92,9 +92,9 @@ class OrderSeeder extends Seeder
                     'tax_breakdown' => new TaxBreakdown(collect([
                         new TaxBreakdownAmount(
                             price: new Price($lines->sum('tax_total'), $currency, 1),
-                            identifier: 'VAT',
-                            description: 'VAT',
-                            percentage: 20,
+                            identifier: 'IVA',
+                            description: 'IVA',
+                            percentage: 13,
                         ),
                     ])),
                 ];
@@ -115,7 +115,7 @@ class OrderSeeder extends Seeder
                 $shipping = OrderAddress::factory()->create([
                     'order_id' => $orderModel->id,
                     'type' => 'shipping',
-                    'country_id' => 235, // UK
+                    'country_id' => 68, // UK
                 ]);
 
                 if ($faker->boolean()) {
@@ -127,7 +127,7 @@ class OrderSeeder extends Seeder
                     OrderAddress::factory()->create([
                         'order_id' => $orderModel->id,
                         'type' => 'billing',
-                        'country_id' => 235, // UK
+                        'country_id' => 68, // UK
                     ]);
                 }
 

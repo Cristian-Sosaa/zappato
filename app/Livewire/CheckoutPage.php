@@ -265,7 +265,7 @@ class CheckoutPage extends Component
      */
     public function getCountriesProperty(): Collection
     {
-        return Country::whereIn('iso3', ['GBR', 'USA'])->get();
+        return Country::whereIn('iso3', ['SLV'])->get();
     }
 
     /**
@@ -303,6 +303,6 @@ class CheckoutPage extends Component
     public function render(): View
     {
         return view('livewire.checkout-page')
-            ->layout('layouts.checkout');
+            ->with('layout', 'layouts.checkout');
     }
 }

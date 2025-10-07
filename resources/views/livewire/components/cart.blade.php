@@ -70,7 +70,7 @@
                                                        wire:model.live="lines.{{ $index }}.quantity" />
 
                                                 <p class="ml-2 text-xs">
-                                                    @ {{ $line['unit_price'] }}
+                                                    Total: {{ $line['unit_price'] }}
                                                 </p>
 
                                                 <button class="p-2 ml-auto text-gray-600 transition-colors rounded-lg hover:bg-gray-100 hover:text-gray-700"
@@ -130,19 +130,19 @@
                 <button class="block w-full p-3 text-sm font-medium text-blue-800 border border-blue-600 rounded-lg hover:ring-1 hover:ring-blue-600"
                         type="button"
                         wire:click="updateLines">
-                    Update Cart
+                        Actualizar Carrito
                 </button>
 
                 <a class="block w-full p-3 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-500"
                    href="{{ route('checkout.view') }}"
                    wire:navigate
                 >
-                    Checkout
+                    Pagar
                 </a>
 
                 <a class="inline-block text-sm font-medium text-gray-600 underline hover:text-gray-500"
                    href="{{ url('/') }}">
-                    Continue Shopping
+                    Continar Comprando
                 </a>
             </div>
         @endif
