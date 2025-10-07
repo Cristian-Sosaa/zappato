@@ -10,16 +10,19 @@
                 <x-brand.logo class="w-auto h-6 text-indigo-600" />
             </a>
 
-            <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
-                @foreach ($this->collections as $collection)
-                    <a class="text-sm font-medium transition hover:opacity-75"
-                       href="{{ route('collection.view', $collection->defaultUrl->slug) }}"
-                       wire:navigate
-                    >
-                        {{ $collection->translateAttribute('name') }}
-                    </a>
-                @endforeach
-            </nav>
+                {{-- 
+                <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
+                    @foreach ($this->collections as $collection)
+                        <a class="text-sm font-medium transition hover:opacity-75"
+                        href="{{ route('collection.view', $collection->defaultUrl->slug) }}"
+                        wire:navigate
+                        >
+                            {{ $collection->translateAttribute('name') }}
+                        </a>
+                    @endforeach
+                </nav>
+                --}}
+
         </div>
 
         <div class="flex items-center justify-between flex-1 ml-4 lg:justify-end">
